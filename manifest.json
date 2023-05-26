@@ -1,0 +1,13 @@
+{"name": "UA Internal Medicine",
+"short_name": "UAIM",
+"start_url": "/",
+"background_color": "#ab0720",
+"theme_color": "#ab0720",
+"display": "standalone",
+"icons":[
+    {"src": "images/logo2.png",
+    "sizes": "454x454",
+    "type": "image/png"
+}
+]
+}

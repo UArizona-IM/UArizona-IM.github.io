@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content=white>
+   <title>UAIM</title>
+   <link rel="manifest" href="manifest.json">
+   <link rel="apple-touch-icon" href="images/logo2.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class= "inner"> 
+      <div class="logo">
+        <div>
+          <font color = white>THE UNIVERSITY OF ARIZONA</font><font color= #16254b>$nbsp;$nbsp$nbsp$nbsp</font>
+        </div>
+       </div>
+    </div>
+    </div>
+  </header>
+
+</body>
+<body> 
+  <div id="top">
+   <img class="image-UAIM" src="images/UAIM.png" alt="UA internal medicine">
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Drop-down Menu</title>
+ <style>
+   .content {
+     display: none;
+   }
+ </style>
+ <script>
+   function showContent() {
+     var selectedValue = document.getElementById("headerSelect").value;
+     var contentElements = document.getElementsByClassName("content");
+     for (var i = 0; i < contentElements.length; i++) {
+       contentElements[i].style.display = "none";
+     }
+     document.getElementById(selectedValue).style.display = "block";
+   }
+ </script>
+ <style>
+  .content2 {
+    display: none;
+  }
+</style>
+<script>
+  function showContent2() {
+    var selectedValue = document.getElementById("headerSelect2").value;
+    var contentElements = document.getElementsByClassName("content2");
+    for (var i = 0; i < contentElements.length; i++) {
+      contentElements[i].style.display = "none";
+    }
+    document.getElementById(selectedValue).style.display = "block";
+  }
+</script>
+</head>
+<body>
+    <div id="main-head">
+      <div id="main-head2">
+    <h1><font color = #16254b>Internal Medicine</font></h1>
+      </div>
+    <hr class="solid"></hr>
+    <nav>
+      <li><span><a href=""> <font color = black>BUMCT</font></a></span></li>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <li><span><a href=""><font color = black>BUMCS</font></a></span></li>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <li><span><a href=""><font color = black>SAVAHCS</font></a></span></li>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <li><span><a href=""><font color = black>TMC</font></a></span></li>
+    </nav>
+    </div>
+    <hr class="solid"></hr>
+    <p>&nbsp</p>
+  <div id="container">
+  <div id="main">
+ <label for="headerSelect"><h1> <font color=#16254b ; size="5px">Rapid Response:</font></h1></label>
+ <select id="headerSelect" onchange="showContent()">
+   <option value="">Select...</option>
+   <option value="header1">Codes</option>
+   <option value="header2">Obtain Data</option>
+   <option value="header3">Non-Senior Tasks</option>
+   <option value="header4">Hs and Ts</option>
+   <option value="header5">ABCs</option>
+   <option value="header6">Tachycardia</option>
+   <option value="header7">Hypertensive Urgency </option>
+   <option value="header8">Bradycardia</option>
+   <option value="header9">Hypotension</option>
+   <option value="header10">DVT/PE</option>
+   <option value="header11">GI Bleed</option>
+   <option value="header12">Acute Coronary syndrome</option>
+   <option value="header13">Acute Hypoxemia</option>
+   <option value="header14">AMS</option>
+   <option value="header15">Seizures</option>
+   <option value="header16">Anaphylaxis</option>
+ </select>
+
+<div id="main-inner">
+ <div id="header1" class="content">
+  <p>&nbsp</p>
+  <h2>Codes</h2>
+   <p>&nbspA - Access</p>
+   <p>&nbspB - Backboard Status </p>
+   <p>&nbspC - Code Status </p>
+   <p>&nbspD - Defib</p>
+   <p>&nbspD - Drips</p>
+   <p>&nbspE - Epi</p>
+   <p>&nbspE - Electricity (150-200J; tele)</p>
+   <p>&nbspF - Fluids</p>
+   <p>&nbspF - Family</p>
+   <p>&nbspG - Glucose</p>
+ </div>
+
+
+ <div id="header2" class="content">
+  <p>&nbsp</p>
+   <h2>Obtain Data</h2>
+   <p>&nbsp[] Preceding events</p>
+   <p>&nbsp[] Code Status</p>
+   <p>&nbsp[] Vascular Access </p>
+   <p>&nbsp[] Vitals</p>
+   <p>&nbsp[] POCT glucose </p>
+   <p>&nbsp[] CBC & CMP </p>
+   <p>&nbsp[] VBG +Lactate </p>
+   <p>&nbsp[]EKG + Troponin </p>
+   <p>&nbsp[]CXR /other mig </p>
+   <p>&nbsp[] Check MAR</p>
+ </div>
+
+
+ <div id="header3" class="content">
+  <p>&nbsp</p>
+   <h2>Non-Senior Tasks</h2>
+   <p>&nbsp- Confirm Code Status</p>
+   <p>&nbsp- Confirm Access</p>
+   <p>&nbsp- Check IVs running</p>
+   <p>&nbsp- Access EMR</p>
+   <p>&nbsp- Print tele strips</p>
+   <p>&nbsp- Notify attending/family</p>
+ </div>
+
+
+ <div id="header4" class="content">
+  <p>&nbsp</p>
+   <h2>Hs and Ts</h2>
+   <p>&nbsp<font color = red> <b>Hypoxemia</b> → Intubate/ECMO</font></p>
+   <p>&nbsp<b>Hypovolemia</b> → IF, blood</p>
+   <p>&nbsp<b>H+(acidemia)</b> → bicarb</p>
+   <p>&nbsp<b>Hyperkalemia</b> → D5+insulin, Ca gluconate/Ca chloride</p>
+   <p>&nbsp<b>Hypothermia</b> → warming</p>
+   <p>&nbsp<b>Tamponade</b> → pericardiocentesis</p>
+   <p>&nbsp<b>Tension PTX</b> → needle decompress</p>
+   <p>&nbsp<b>Thrombosis/MI</b> → PCI, Cards</p>
+   <p>&nbsp<b>Thrombosis/PE</b> → Hep Drip/IR</p>
+   <p>&nbsp<b>Toxin/Drugs</b> → reversal agents</p>
+ </div>
+
+
+ <div id="header5" class="content">
+  <p>&nbsp</p>
+   <h2>ABCs</h2>
+   <p>&nbsp1. <b>Airway:</b> if unconscious or poor mentation → intubate</p>
+   <p>&nbsp2. <b>Breathing:</b> check for chest rise, ascultate for breath sounds; if absent → check pulse →
+     present pulse → get CXR absent pulse → start CPR</p>
+   <p>&nbsp3. <b>Circulation:</b> Check distal pulse in all extremities, BP, HR, ascultate. If no pulse → activate code blue + CPR</p>
+ </div>
+
+
+ <div id="header6" class="content">
+  <p>&nbsp</p>
+   <h2>Tachycardia</h2>
+   <p>&nbsp Narrow: AVRT/AV/NRT, AF/AFlutter, AT, MAT</p>
+   <p>&nbspWide: MMVT, PMVT, SVT w/ aberrancy, pacemaker</p>
+   <p>&nbsp<b>Synchronized Cardioversion:</b></p>
+   <p>&nbsp- Narrow/regular: 50-100J</p>
+   <p>&nbsp- Narrow/irregular: 120-200J</p>
+   <p>&nbsp- Wide/regular: 100J</p>
+   <p>&nbsp- Wide/irregular: 150-200J</p>
+   <p>&nbsp<b>Medications:</b></p>
+   <p>&nbsp<u>Narrow/reg</u>:adenosine (6, 12, 12)</p>
+   <p>&nbsp<u>Wide/reg:</u></p>
+   <p>&nbsp- Amio: 150mg → 1mg/min</p>
+   <p>&nbsp- Lido: 100mg → 50mg q5 x3 → 1-2mg/min</p>
+   <p>&nbsp- Procainamide: 20-50mg/min until hypoTN or QRS ↑ 50% → 1-4 mg/min</p>
+   <P>&nbsp- consider adenosine unless WPW</P>
+   <P>&nbsp<u>Wide/irreg:</u></P>
+   <p>&nbsp<b>- PMVT:</b> amio, lido; tx ischemia</p>
+   <p>&nbsp<b>- Torsades:</b> Mg 2mg, ↑ HR Isoprot.</p>
+   <p>&nbsp<b>- AF+WPW:</b>procainamide, ibutilide (1mg)</p>
+   <p>&nbsp(🚫 adenosine, BB/CCB, dig)</p>
+ </div>
+
+
+ <div id="header7" class="content">
+  <p>&nbsp</p>
+   <h2>Hypertensive Urgency</h2>
+   <p>&nbspLabetalol - IV - 10-80mg q10min → PO </p>
+   <p>&nbspHydralazine - IV - 5-20mg q15-30min → PO </p>
+   <p>&nbspEKG + troponin, U/A, VBG +Lactate</p>
+   <p>&nbspFocused optho, auditory, cardiopulmonary exam</p>
+ </div>
+
+
+ <div id="header8" class="content">
+  <p>&nbsp</p>
+   <h2>Bradycardia</h2>
+   <p>&nbsp<u>Conduction disease, R sided MI, vagal, Rx effect, ↑ ICP, hypothyroidism, hypoxemia</u></p>
+     <p>&nbsp Atropine 0.5-1mg q3-5m, max 3mg</p>
+     <p>&nbspDopamine 2-20 mcg/kg/min</p>
+     <p>&nbspEpinephrine 2-10mcg/min</p>
+     <p>&nbspIsoproterenol 2-10mcg/min</p>
+     <p>&nbsp<b>Transcutaneous pacing</b></p>
+       <p>&nbspmidaz/fentanyl or ativan/dilaudid
+       <p>&nbspTransvenous pacing (cards consult)</p>
+ </div>
+
+
+ <div id="header9" class="content">
+  <p>&nbsp</p>
+   <h2>Hypotension</h2>
+   <p>&nbsp<b>Cardiogenic:</b> MI, ADHF, BB/CBB tox, acute myocarditis, valvular disease (AS)</p>
+   <p>&nbsp<b>Distributive:</b> sepsis, anaphylaxis, toxin, <font color = red>liver dx</font> adrenal stuff, <font color = red>sleeping, spinal shock </font></p>
+   <p>&nbsp<b>Hypovolemic:</b> bleeding, diuresis, HD, GI losses </p>
+   <p>&nbsp<b>Obstructive:</b> PE, tamponade</p>
+ </div>
+
+
+ <div id="header10" class="content">
+  <p>&nbsp</p>
+   <h2>DVT/PE</h2>
+   <p>&nbsp<b>Stable:</b> Hep gtt+ consult IR</p>
+   <p>&nbsp<b>Unstable:</b> Call PERT: 520-XXX-XXXX, Call MICU, Hep gtt, EKG, trop, TTE, PT/INR, proBNP, call pharm for tPA</p>
+ </div>
+
+
+ <div id="header11" class="content">
+  <p>&nbsp</p>
+   <h2>GI Bleed</h2>
+   <p>&nbsp 2 large bore IV, Type/Screen, Consent, pRBC, IV PPI 40mg, Octreotide 50mcg, CXR if portal HTN </p>
+   <p>&nbsp GI on call: 520-xxxx-xxx BloodBank 520-xxx-xxxx</p>
+ </div>
+
+
+ <div id="header12" class="content">
+  <p>&nbsp</p>
+   <h2>Acute Coronary syndrome</h2>
+   <p> &nbsp ASA 325(load), statin, NTG, heparin gtt, BB, EKG, trend trop. Cards 520-xxx-xxxx for refractory CP, HD unstable, or arrhythmia</p>
+ </div>
+
+
+ <div id="header13" class="content">
+  <p>&nbsp</p>
+   <h2>Acute Hypoxemia</h2>
+   <p>&nbspAspiration → Suction/ </p>
+   <p>&nbspMucus plug → RT </p>
+   <p>&nbspPneumonia → ABX </p>
+   <p>&nbspPulm edema → Diuresis </p>
+   <p>&nbspPE → Heparin Drip </p>
+   <p>&nbspPneumothorax → Needle Decompress </p>
+   <p>&nbspPleural effusion → Diuresis </p>
+ </div>
+
+
+ <div id="header14" class="content">
+  <p>&nbsp</p>
+   <h2>AMS</h2>
+   <p>&nbspNS: CVA, ICH, sz, infxn, PRES</p>
+   <p>&nbspMetabolic toxins: NH3, CO2, BUN, Na, glucose </p>
+   <p>&nbspExogenous toxins: meds, drugs, w/d</p>
+   <p>&nbspVitals: HTN/HoTN, hypoglycemia, hypoxemia</p>
+   <p>&nbspMisc: TTP, AI, hypothyroid</p>
+ </div>
+
+
+ <div id="header15" class="content">
+  <p>&nbsp</p>
+   <h2>Seizures</h2>
+   <p>&nbsp Lorazepam 2-4mg IV/I0x2</p>
+   <p>&nbsp diazepam 20mg PR</p>
+   <p>&nbsp levetiracetam 20mg/kg </p>
+   <p>&nbsp Neuro On-Call: 520-xxx-xxxx</p>
+ </div>
+
+
+ <div id="header16" class="content">
+  <p>&nbsp</p> 
+  <h2>Anaphylaxis</h2>
+   <p>&nbsp Epi 0.3-0.5 IM (1:1000; 1mg/mL)</p>
+   <p>&nbsp Epi 0.1-0.3mg IV (1:10,000; 0.1mg/mL)</p>
+   <p>&nbsp → repeat q5-15min; start gtt if>3 required</p>
+   <p>&nbsp Other agents: Benadryl 50mg, methylpred 125mg,albuterol neb, IVF </p>
+ </div>
+</div>
+<label for="headerSelect2"><h1> <font color=#16254b ; size="5px">Dotphrases:</font></h1></label>
+ <select id="headerSelect2" onchange="showContent2()">
+   <option value="">Select...</option>
+   <option value="header18">.rapidresponse</option>
+ </select>
+<div id="main-inner2">
+ <div id="header18" class="content2">
+  <p>&nbsp</p>
+  <h2>.rapidresponse</h2>
+  <p>&nbspdotphrase:<font color="#ab0720"> .rapidresponse</font></p>
+  <p>&nbsp</p>
+  <p>Patient Name: {patient name}</p>
+  <p> Room Number: {room number}</p>
+  <p>Code Status prior to rapid: {code status}</p>
+  <p>Primary Provider: {primary physician}</p>
+  <p>Nurse: {nurse}</p>
+  <p>Reason for Rapid Response: {concerns}</p>
+    <p>Patient/Subjective complaint (if applicable):</p>
+    <p>RR responder’s initial assessment of pt:</p>
+    <p>Vital Signs:</p>
+    <p>- BP: {blood pressure}</p>
+    <p>- Systolic: {systolic BP}</p>
+    <p>- Diastolic: {diastolic BP}</p>
+    <p>- HR: {heart rate}</p>
+    <p> - RR: {respiratory rate}</p>
+    <p> - O2: {oxygen saturation}</p>
+    <p> - Temp: {temperature}</p>
+    <p> - Site: {temperature site}</p>
+    <p>&nbsp</p>
+    <p> Physical Exam:</p>
+    <p> - Mental status</p>
+    <p> - Cardiopulmonary exam</p>
+    <p> - Distal pulses</p>
+    <p> - Neuro exam</p>
+    <p> - Focused PE</p>
+    <p>&nbsp</p>
+    <p> Actions Taken/Labs ordered: {actions taken}</p>
+    <p> Labs that resulted:</p>
+    <p>&nbsp</p>
+    <p> Medical History:</p>
+    <p> - Allergies: {allergies}</p>
+    <p> - Medications: {medications}</p>
+    <p> - Medical conditions: {medical conditions}</p>
+    <p> Assessment:</p>
+    <p> - Level of consciousness: {LOC}</p>
+    <p> - Airway: {airway assessment}</p>
+    <p> - Breathing: {breathing assessment}</p>
+    <p> - Circulation: {circulation assessment}</p>
+    <p> Interventions:</p>
+    <p> - IV access: {IV access status}</p>
+    <p> - Fluids: {fluids administered}</p>
+    <p> - Medications: {medications administered}</p>
+    <p> - Labs Ordered: {labs ordered}</p>
+    <p> Post Rapid Assessment/Plan</p>
+    <p> #Problem - xyz arose, likely as a complication of ____</p>
+    <p> Plan: </p>
+    <p> A.</p>
+    <p> B.</p>
+    <p> C.</p>
+    <p> Post-Rapid status: Med/Surg, PCU, ICU, CCU, etc</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+ </div>
+</div>
+</div>
+</div>
+<script src="/src/script.js"></script>
+<footer id="footer">
+<p>&nbsp</p>
+<p><font color = #737373>Developed by: Simar Singh, MD PHD </font></p>
+<p>&#160; &nbsp; &nbsp; &nbsp; &nbsp;<font color = #737373> Deirdre ODonnell</font></p>
+</footer>
+ </body>
+</html>
