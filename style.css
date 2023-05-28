@@ -97,37 +97,6 @@ hr.solid {
   border-top: 2px solid #cdcdcd;
 }
 
-nav{
-  display: inline-flex;
-  justify-content: space-evenly;
-}
-
- 
-nav a:hover{
-  color: #ab0720;
-  font-weight: 600;
- }
- 
-nav span {
-  display: table-cell;
-  vertical-align: middle;
- }
- 
-nav a{
-  color: #101010;
- }
- 
-nav .button{
-  background-color: #ab0720;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 4px;
- }
- 
- 
-nav .button:hover{
-  filter: brightness(1.05);
- } 
  
  table {
   width: 100%;
@@ -280,3 +249,4 @@ th {
     margin:0
   }
 }
+
