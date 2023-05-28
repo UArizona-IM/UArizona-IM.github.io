@@ -69,6 +69,21 @@
     document.getElementById(selectedValue).style.display = "block";
   }
 </script>
+<style>
+  .content3 {
+    display: none;
+  }
+</style>
+<script>
+  function showContent3() {
+    var selectedValue = document.getElementById("headerSelect3").value;
+    var contentElements = document.getElementsByClassName("content3");
+    for (var i = 0; i < contentElements.length; i++) {
+      contentElements[i].style.display = "none";
+    }
+    document.getElementById(selectedValue).style.display = "block";
+  }
+</script>
 </head>
 <body>
     <div id="main-head">
@@ -77,7 +92,7 @@
       </div>
     <hr class="solid"></hr>
     <nav>
-      <li><span><a href=""> <font color = black>BUMCT</font></a></span></li>
+    <li><span><a href=""> <font color = black>BUMCT</font></a></span></li>
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
@@ -93,7 +108,7 @@
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
-      <li><span><a href=""><font color = black>BUMCS</font></a></span></li>
+    <li><span><a href=""><font color = black>BUMCS</font></a></span></li>
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
@@ -109,7 +124,7 @@
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
-      <li><span><a href=""><font color = black>SAVAHCS</font></a></span></li>
+    <li><span><a href=""><font color = black>SAVAHCS</font></a></span></li>
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
@@ -125,7 +140,7 @@
       <p>&nbsp</p>
       <p>&nbsp</p>
       <p>&nbsp</p>
-      <li><span><a href=""><font color = black>TMC</font></a></span></li>
+     <li><span><a href=""><font color = black>TMC</font></a></span></li>
     </nav>
     </div>
     <hr class="solid"></hr>
@@ -349,6 +364,129 @@
    <p>&nbsp Other agents: Benadryl 50mg, methylpred 125mg,albuterol neb, IVF </p>
  </div>
 </div>
+
+<p>&nbsp</p>
+<label for="headerSelect3"><h1> <font color=#16254b ; size="5px">Important Numbers:</font></h1></label>
+ <select id="headerSelect3" onchange="showContent3()">
+   <option value="">Select...</option>
+   <option value="header19">BUMC - South</option>
+   <option value="header20">BUMC - Tucson</option>
+   <option value="header21">SAVAHCS</option>
+   <option value="header22">TMC</option>
+ </select>
+<div id="main-inner3">
+ <div id="header19" class="content3">
+  <p>&nbsp</p>
+  <h2>BUMC - South</h2>
+  <table>
+    <tr>
+      <th>Facility</th>
+      <th>Phone #</th>
+    </tr>
+    <tr>
+      <td>
+        <p>STEMI</p>
+        <p>&nbsp</p>
+        <p>STROKE</p>
+        <p>&nbsp</p>
+        <p>RRT/CODE BLUE</p>
+      </td>
+      <td>(520) 874-3333</td>
+    </tr>
+    <tr>
+      <td>ICU Desk</td>
+      <td>(520) 874-2860</td>
+    </tr>
+    <tr>
+      <td>ED Desk</td>
+      <td>(520) 874-5600</td>
+    </tr>
+    <tr>
+      <td>Pharmacy</td>
+      <td>(520) 874-2211</td>
+    </tr>
+    <tr>
+      <td>House Supervisor</td>
+      <td>(520) 874-1215</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>(520) 694-6533</td>
+    </tr>
+  </table>
+ </div>
+
+ <div id="header20" class="content3">
+  <p>&nbsp</p>
+  <h2>BUMC - Tucson</h2>
+  <table>
+    <tr>
+      <th>Facility</th>
+      <th>Phone #</th>
+    </tr>
+    <tr>
+      <td>
+        <p>STEMI</p>
+        <p>&nbsp</p>
+        <p>STROKE</p>
+        <p>&nbsp</p>
+        <p>RRT/CODE BLUE</p>
+        <p>&nbsp</p>
+        <p>OB Emergency</p>
+      </td>
+      <td> (520) 694-5000</td>
+    </tr>
+    <tr>
+      <td>ICU Desk</td>
+      <td>
+        <p><b>Neuro:</b></p> 
+          <p>(520) 694-7395</p>
+        <p><b>CardioVasc:</b></p> 
+          <p> (520) 694-7660</p>
+        <p><b>Medical:</b></p>
+          <p> (520) 694-0099</p>
+        <p><b>Surgical/Trauma:</b></p> 
+          <p> (520) 694-3290</p>
+        <p><b>Neonatal:</b></p> 
+          <p> (520) 694-7578</p>
+        <p><b>Pediatric:</b></p> 
+          <p> (520) 694-7376</p>
+      </td>
+    </tr>
+    <tr>
+      <td>ED Desk</td>
+      <td><b>Adults & Peds:</b>(520) 694-5732</td>
+    </tr>
+    <tr>
+      <td>Pharmacy</td>
+      <td>(520) 694-6577</td>
+    </tr>
+    <tr>
+      <td>House Supervisor</td>
+      <td>(520) 694-9887</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>(520) 694-6533</td>
+    </tr>
+  </table>
+ </div>
+
+ <div id="header21" class="content3">
+  <p>&nbsp</p>
+  <h2>SAVAHCS</h2>
+  <p>&nbspdotphrase:<font color="#ab0720"> .rapidresponse</font></p>
+  <p>
+ </div>
+
+ <div id="header22" class="content3">
+  <p>&nbsp</p>
+  <h2>TMC</h2>
+  <p>&nbspdotphrase:<font color="#ab0720"> .rapidresponse</font></p>
+  <p>
+ </div>
+</div>
+<p>&nbsp</p>
 <label for="headerSelect2"><h1> <font color=#16254b ; size="5px">Dotphrases:</font></h1></label>
  <select id="headerSelect2" onchange="showContent2()">
    <option value="">Select...</option>
@@ -415,6 +553,9 @@
     <p>&nbsp</p>
  </div>
 </div>
+   
+   
+   
 </div>
 </div>
 <script src="/src/script.js"></script>
