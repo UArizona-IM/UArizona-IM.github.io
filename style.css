@@ -180,7 +180,12 @@ hr.solid {
   #footer{
     width:100%;
     background-color: #f4ede5;
-    margin:0
+    position: relative;
+    text-align: center;
+    position: fixed;
+   padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 70px;
   }
 
 }
@@ -206,7 +211,12 @@ hr.solid {
   #footer{
     width:100%;
     background-color: #f4ede5;
-    margin:0
+    position: relative;
+    text-align: center;
+    position: fixed;
+   padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 70px;
   }
 }
 @media (max-width:992px) {
@@ -231,7 +241,11 @@ hr.solid {
   #footer{
     width:100%;
     background-color: #f4ede5;
-    margin:0
-  ;
+    position: relative;
+    text-align: center;
+    position: fixed;
+   padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 70px;
   }
 }
