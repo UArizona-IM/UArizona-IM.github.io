@@ -1,4 +1,5 @@
-*{
+*
+{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -39,9 +40,33 @@ header .logo img{
   margin-top: 5px; 
 }
 
-html, body {
-  height: 100%
-}
+.button-container {
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+   margin-top: 20px;
+        }
+ .button-container button {
+  margin-bottom: 30px; 
+  border-radius: 15px;
+   background-color: #16254b; 
+  color: white
+        }
+
+  #RapidResponseButton{
+    font-size: 18px;
+    padding: 25px 64px;
+  }
+
+  #ImportantNumbersButton{
+    font-size: 18px;
+    padding: 25px 50px;
+  }
+
+  #DotphraseButton{
+    font-size: 18px;
+    padding: 25px 82px;
+    }
 
 #container{
   min-height:100%;
@@ -49,33 +74,21 @@ html, body {
   font-size: 20px;
 }
 
-#main{
-  overflow:auto;
-  padding-bottom: 50px;
+#body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#main-inner{
-  margin-left:25px;
-  margin-right:5px
-}
-
-#main-inner2{
-  margin-left:25px;
-  margin-right:5px
-}
-
-#main-inner3{
-  margin-left:25px;
-  margin-right:20px
-}
 
 #footer{
   background-color: #f4ede5;
-  position:relative;
-  height:100px;
-  margin-top: -100px;
-  clear:both;
-  text-align: center;
+  position: fixed;
+   padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
 }
 
 #top{
@@ -87,31 +100,10 @@ html, body {
   width: 300px;
 }
 
-#main-head{
-  text-align: center;
-  font-family:'EB Garamond', serif;
-  font-size: x-large;
-}
-
 hr.solid {
   border-top: 2px solid #cdcdcd;
 }
 
- 
- table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #f2f2f2;
-}
 
 @media (max-width:600px) {
   header{
@@ -124,12 +116,14 @@ th {
   }
   #container{
     width:100%;
-    margin:0
+    margin:0; 
+    height: 100%;
   }
   
   #main{
     width:100%; 
-    margin:0
+    margin:0;
+    overflow: auto;
   }
 
   #top{
@@ -145,17 +139,14 @@ th {
   #footer{
     width:100%;
     background-color: #f4ede5;
-    margin:0
+    position: relative;
+    text-align: center;
+    position: fixed;
+   padding: 10px 10px 0px 10px;
+    bottom: 0;
+    height: 70px;
   }
 
-  #main-head{
-    font-size:medium;
-    width:100%
-  }
-
-  #main-head2{
-    font-size:large;
-  }
 }
 @media (max-width:601px) {
   header{
@@ -191,13 +182,7 @@ th {
     background-color: #f4ede5;
     margin:0
   }
-  #main-head{
-    font-size:medium;
-  }
 
-  #main-head2{
-    font-size:large;
-  }
 }
 @media (max-width:768px) {
   header{
@@ -247,6 +232,6 @@ th {
     width:100%;
     background-color: #f4ede5;
     margin:0
+  ;
   }
 }
-

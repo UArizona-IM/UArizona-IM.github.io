@@ -21,8 +21,3 @@ self.addEventListener('install', function(event) {
       })
     );
   });
-self.addEventListener('install', function() {
-  var updateCheckScript = document.createElement('script');
-  updateCheckScript.src = '/update-check.js';
-  document.body.appendChild(updateCheckScript);
-});
